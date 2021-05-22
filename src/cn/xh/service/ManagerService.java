@@ -23,17 +23,7 @@ public interface ManagerService {
 
 	void addCategory(Category category);
 
-	public List<Book> getCategoryBook(String cid);
-
-	public List<Book> rwsk();
-
-	public List<Book> sets();
-
-	public List<Book> jjjr();
-
-	public List<Book> kxjs();
-
-	public List<Book> jyks();
+	List<Book> getCategoryBook(String cid);
 
 	Book findBookById(String book_id);
 

@@ -203,36 +203,6 @@ public class ClientServlet extends HttpServlet {
 		req.getRequestDispatcher("/showBook.jsp").forward(req, resp);
 	}
 
-	private void rwsk(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		List<Book> books = service.rwsk();// 人文社科类书籍
-		req.setAttribute("books", books);
-		req.getRequestDispatcher("/showBook.jsp").forward(req, resp);
-	}
-
-	private void sets(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		List<Book> books = service.sets();// 少儿童书类书籍
-		req.setAttribute("books", books);
-		req.getRequestDispatcher("/showBook.jsp").forward(req, resp);
-	}
-
-	private void jyks(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		List<Book> books = service.jyks();// 教育考试类书籍
-		req.setAttribute("books", books);
-		req.getRequestDispatcher("/showBook.jsp").forward(req, resp);
-	}
-
-	private void jjjr(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		List<Book> books = service.jjjr();// 金融经济类书籍
-		req.setAttribute("books", books);
-		req.getRequestDispatcher("/showBook.jsp").forward(req, resp);
-	}
-
-	private void kxjs(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		List<Book> books = service.kxjs();// 科学技术类书籍
-		req.setAttribute("books", books);
-		req.getRequestDispatcher("/showBook.jsp").forward(req, resp);
-	}
-
 	private void personInformation(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		String username = req.getParameter("username");

@@ -236,7 +236,8 @@ public class ManagerServlet extends HttpServlet {
         try {
             // 存放路径：不要放在web-inf中
             // 01.获取存放文件的真实目录
-            String dirImages = getServletContext().getRealPath("/img");
+            String dirImages = getServletContext().getRealPath("/images");
+//            String dirImages = getServletContext().getRealPath("/img");
             // 02. 通过io存文件
             // 03. 生成文件名 （用户上传图片， 图片名可能重复）
             String FieldName = item.getFieldName();// 输入框的name值
@@ -244,11 +245,12 @@ public class ManagerServlet extends HttpServlet {
             String fileType = name.substring(name.lastIndexOf(".") + 1);
             String fileName = UUID.randomUUID().toString();// 生成用不重复的文件名
             // 生成文件夹名
-//			Date time = new Date();
-//			SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-//			String strTime = simpleDateFormat.format(time);
+			Date time = new Date();
+			SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+			String strTime = simpleDateFormat.format(time);
             // path属性filename
-            String path = "books";// 存放到book对象中
+            String path = strTime +File.separator + "books";// 存放到book对象中的路径
+//            String path = "books";// 存放到book对象中
             String filename = fileName + "." + fileType;
             // fileDir：图片最终存在于fileDir
             File fileDir = new File(dirImages, path + File.separator + filename);

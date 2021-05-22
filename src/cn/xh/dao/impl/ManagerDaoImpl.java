@@ -156,47 +156,13 @@ public class ManagerDaoImpl implements ManagerDao {
 		}
 	}
 
-	// 文学艺术类书籍
+	//分类书籍
 	@Override
 	public List<Book> getCategoryBook(String cid) {
 		ClientDaoImpl clientDaoImpl = new ClientDaoImpl();
 		return clientDaoImpl.getCategoryBook(cid);
 	}
 
-	// 人文社科类书籍列表
-	@Override
-	public List<Book> rwsk() {
-		ClientDaoImpl clientDaoImpl = new ClientDaoImpl();
-		return clientDaoImpl.rwsk();
-	}
-
-	// 少儿童书类书籍列表
-	@Override
-	public List<Book> sets() {
-		ClientDaoImpl clientDaoImpl = new ClientDaoImpl();
-		return clientDaoImpl.sets();
-	}
-
-	// 经济金融类书籍列表
-	@Override
-	public List<Book> jjjr() {
-		ClientDaoImpl clientDaoImpl = new ClientDaoImpl();
-		return clientDaoImpl.jjjr();
-	}
-
-	// 科学技术类书籍列表
-	@Override
-	public List<Book> kxjs() {
-		ClientDaoImpl clientDaoImpl = new ClientDaoImpl();
-		return clientDaoImpl.kxjs();
-	}
-
-	// 教育考试类书籍列表
-	@Override
-	public List<Book> jyks() {
-		ClientDaoImpl clientDaoImpl = new ClientDaoImpl();
-		return clientDaoImpl.jyks();
-	}
 
 	// 根据书籍id找到书籍信息
 	@Override

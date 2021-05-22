@@ -11,7 +11,7 @@ Javaweb_bookstore，一个基于servlet+jsp 的MVC图书销售管理系统。
   MySQL版本：v8.0
   JDK:1.8.0_171
 
-（没有用到任何框架，都是servlet）
+（没有用到任何框架，都是servlet，前端是JSP+bootstrap）
 
 ##  功能模块
 
@@ -54,7 +54,7 @@ Javaweb_bookstore，一个基于servlet+jsp 的MVC图书销售管理系统。
 - 上方，设置Path的目录，`web.xml`文件要正确
 - 下方，设置Web Resource Dictory 是正确的WebRoot 路径，也就是WebContent。
 
-
+`web.xml` 可以配置首页地址，具体请看文件，修改你需要的首页，第一个是没有自动加载数据的，第二个是加载数据的。
 
 #### 2.4、生成Artifact包
 
@@ -100,8 +100,13 @@ Javaweb_bookstore，一个基于servlet+jsp 的MVC图书销售管理系统。
 - 立即购买跳转
 - 区分是否收藏过
 
-至于Bug嘛，就肯定有的，另外如果有什么问题，可以联系我wx：**HelloCoder**
 
-（求个`star`，筒子们）
+用户账号密码：HaC / 123
+管理员账号密码：admin  / 123
+
+
+至于Bug嘛，就肯定有的，另外如果有什么问题，可以联系我：
+
+（如果项目还不错，举手之劳点个`star`，筒子们，感谢）
 
 ![](https://cdn.jsdelivr.net/gh/DogerRain/image@main/Home/wuli_HelloCoder.png)

@@ -25,15 +25,6 @@ public interface ManagerDao {
 
 	List<Book> getCategoryBook(String cid);
 
-	List<Book> rwsk();
-
-	List<Book> sets();
-
-	List<Book> jjjr();
-
-	List<Book> kxjs();
-
-	List<Book> jyks();
 
 	Book findBookById(String book_id);
 

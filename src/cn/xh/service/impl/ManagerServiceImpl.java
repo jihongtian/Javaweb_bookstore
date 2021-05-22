@@ -1,8 +1,5 @@
 package cn.xh.service.impl;
 
-import java.util.List;
-import java.util.UUID;
-
 import cn.xh.dao.ManagerDao;
 import cn.xh.dao.impl.ManagerDaoImpl;
 import cn.xh.domain.Administrator;
@@ -10,6 +7,9 @@ import cn.xh.domain.Book;
 import cn.xh.domain.Category;
 import cn.xh.domain.User;
 import cn.xh.service.ManagerService;
+
+import java.util.List;
+import java.util.UUID;
 
 public class ManagerServiceImpl implements ManagerService {
 	private ManagerDao dao = new ManagerDaoImpl();
@@ -59,30 +59,7 @@ public class ManagerServiceImpl implements ManagerService {
 		return dao.getCategoryBook(cid);
 	}
 
-	@Override
-	public List<Book> rwsk() {
-		return dao.rwsk();
-	}
 
-	@Override
-	public List<Book> sets() {
-		return dao.sets();
-	}
-
-	@Override
-	public List<Book> jjjr() {
-		return dao.jjjr();
-	}
-
-	@Override
-	public List<Book> kxjs() {
-		return dao.kxjs();
-	}
-
-	@Override
-	public List<Book> jyks() {
-		return dao.jyks();
-	}
 
 	@Override
 	public Book findBookById(String book_id) {
